@@ -11,8 +11,11 @@ This is useful when organizing files.
 
 ## How to use
 * Copy the `renumber.sh` file into folder
-* `chmode +x renumber.sh`
+* `chmod +x renumber.sh`
 * `./renumber.sh ext 1 4`
     *  Note: in the last command, `mkv` is the file extension of the files that you want to renumber
     * number `1` is the starting number of the file names. For example, if it is changed to 2, then the file names would start from 2, eg. 0002.mkv, 0003.mkv. etc, (skipping 0001.mkv).  
     * number `4` is the total digits of the file names. If it is set to 4, then the file names would be 0001.mkv, 0002.mkv, etc.
+    
+## Caution
+There is no backup of the files thus "undo" is not possible.
